@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Change Calculator</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="input-cont"><label for="total-cash">Total Cash:</label>
+            <input type="text" id="total-cash" class="totalInput">
+        </div>
+        <button onclick="generator()" name="generate" class="btn">Generate</button>
+        <div id="result" class="result">
+            <p class="change-item hunds">100x <span id="hunds"></span></p>
+            <p class="change-item fiftys">50x <span id="fiftys"></span></p>
+            <p class="change-item tens">10x <span id="tens"></span></p>
+            <p class="change-item fives">5x <span id="fives"></span></p>
+            <p class="change-item pens">coins <span id="pens"></span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
